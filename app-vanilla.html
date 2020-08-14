@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="app.css" media="screen" />
+</head>
+<body>
+    <h1>Ftt-APP Note</h1>
+    <p>
+        <input type="text" id="inputNote">
+        <input type="color" id="inputColor">
+        <button onclick="handleClick()">Salva</button>
+    </p>
+
+    <hr>
+    <ul class="post-it" id="tagList"></ul>
+    <hr>
+
+    <!-- <div id="page">
+        <div class="logo"></div>
+        <ul id="navigation">
+            <li><a href="#"> Item 1</a></li>
+            <li><a href="#"> Item 2</a></li>
+            <li><a href="#"> Item 3</a></li>
+            <li><a href="#"> Item 4</a></li>
+            <li><a href="#"> Item 5</a></li>
+        </ul>
+    </div> -->
+</body>
+
+<script>
+    function handleClick(){
+        var inputNote = document.getElementById("inputNote");
+        var tagList = document.getElementById("tagList");
+        var inputColor = document.getElementById("inputColor");
+
+        var tagLi = document.createElement("li");
+
+        // tagLi.value = inputNote.value;
+        tagLi.textContent = inputNote.value;
+        tagLi.style.backgroundColor = inputColor.value;
+        tagList.appendChild(tagLi);
+        console.log(inputColor.value);
+    }
+</script>
+</html>

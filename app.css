@@ -1,0 +1,21 @@
+body{
+    font-family: Verdana, sans-serif;
+}
+
+.post-it {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.post-it li{
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
